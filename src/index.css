@@ -42,7 +42,7 @@ body {
 }
 
 .card h2 {
-  font-size: 1.2rem;
+  font-size: 20px;
   color: blue;
   margin-bottom: 8px;
   font-weight: 700;
@@ -50,6 +50,6 @@ body {
 
 .card p {
   color: #475569;
-  font-size: 1rem;
+  font-size: 24rem;
   line-height: 1.5;
 }
