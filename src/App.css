@@ -38,7 +38,7 @@ body {
 .card h1 {
   margin-top: 0;
   color: #2563eb;
-  font-size: 2rem;
+  font-size: 32px;
   font-weight: 800;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 8px rgba(37,99,235,0.04);
@@ -47,14 +47,14 @@ body {
 .card h3 {
   margin-top: 20px;
   color: #3b486b;
-  font-size: 1.2rem;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .card p {
   margin: 12px 0;
   color: #475569;
-  font-size: 1.05rem;
+  font-size: 20px;
   line-height: 1.7;
 }
 
