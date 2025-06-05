@@ -1,12 +1,9 @@
-/* App.css */
-
 .App {
   display: flex;
   height: 100vh;
   font-family: Arial, sans-serif;
 }
 
-/* Левая часть с изображением */
 .side-image {
   width: 50%;
   position: relative;
@@ -23,7 +20,6 @@
   object-fit: cover;
 }
 
-/* Правая часть с формой */
 .login-right {
   width: 50%;
   display: flex;
