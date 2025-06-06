@@ -1,21 +1,40 @@
 import './App.css';
+ export class CardClass extends React.Component {
+     render() { 
+         const { Sevenwonders } = this.props; 
 
-function WonderCard(props) {
-  return (
-    <div className="card-design">
-      <img
-        src={props.image}
-        alt={'photo ' + props.title}
-        className="card-image"
-      />
-      <h3>{props.title}</h3>
-      <p>{props.description}</p>
-    </div>
-  );
-}
+         return (
+             <div className="card-design">
+                 <img
+                     src={Sevenwonders.imgUrl}
+                     alt={'photo of ' + Sevenwonders.name}
+                    className="card-image"
+                />
+                 <h3>{Sevenwonders.name}</h3>
+                <p>{Sevenwonders.description}</p>
+             </div>
+         );
+    }
+ }
+
+
+// function WonderCard(props) {
+//   return (
+//     <div className="card-design">
+//       <img
+//         src={props.image}
+//         alt={'photo ' + props.title}
+//         className="card-image"
+//       />
+//       <h3>{props.title}</h3>
+//       <p>{props.description}</p>
+//     </div>
+//   );
+// }
 
 function App() {
-  return (
+  const Sevenwonders
+  // return (
     <div className="grid">
       <WonderCard
         title="Галикарнасский мавзолей"
@@ -52,6 +71,14 @@ function App() {
         image="may.jpg"
         description="Маяк на острове Фарос, помогавший кораблям входить в порт Александрии."
       />
+    </div>
+  );
+}
+return (
+    <div className='cards-container'>
+      {Object.keys(Sevenwonders).map((key) => (
+        <Card key={key} Sevenwonders={Sevenwonders[key]} />
+      ))}
     </div>
   );
 }
